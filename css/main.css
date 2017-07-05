@@ -1,51 +1,3 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption, footer,
-header, hgroup, menu, nav, output, ruby, section,
-summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-strong, b {
-  font-weight: bold;
-}
-em, i {
-  font-style: italic;
-}
-a img {
-  border: none;
-}
-/* END RESET*/
-
 /* GLOBAL STYLES */
   html, body {
     margin: 0;
@@ -59,7 +11,12 @@ a img {
     margin-top: 0;
   }
   a{
-  color: #f00;
+    color: #f00;
+  }
+  h4 {
+    color: #999;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 /* HEADER STYLES */
 .header {
@@ -112,33 +69,6 @@ a img {
 .header-nav > li:first-child a:hover {
       color: #fff;
 }
-  /* SOCIAL STYLES */
-  .social-list {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-  .social-link {
-    background: rgba(150, 150, 150, 0.5);
-    border-radius: 99px;
-    box-sizing: border-box;
-    color: #fff;
-    display: inline-block;
-    font-family: helvetica, arial, sans;
-    font-size: 1em;
-    font-weight: bold;
-    height: 2.5em;
-    line-height: 1;
-    padding-top: 0.85em;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    width: 2.5em;
-  }
-  .social-list > li {
-    display: inline-block;
-    margin: 0 0.5em;
-  }
 /* FOOTER STYLES */
 .footer {
   background-color: #000;
@@ -163,6 +93,34 @@ a img {
 }
 .footer-nav a {
   color: #ccc;
+}
+
+/* SOCIAL STYLES */
+.social-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.social-link {
+  background: rgba(150, 150, 150, 0.5);
+  border-radius: 99px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: helvetica, arial, sans;
+  font-size: 1em;
+  font-weight: bold;
+  height: 2.5em;
+  line-height: 1;
+  padding-top: 0.85em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 2.5em;
+}
+.social-list > li {
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 /* HERO STYLES */
@@ -275,4 +233,78 @@ a img {
 }
 .bio-copy a {
   color: green;
+}
+/* COLUMN STYLES */
+.col-two {
+  display: flex;
+}
+.col-two .col-aside {
+  flex: 0 0 20em;
+  order: 1;
+}
+.col-two .col-content {
+  flex: 1; 
+}
+/* PAGE STYLES */
+.page {
+  margin: 10vh auto 15vh;
+  max-width: 980px;
+  width: 85vw;
+}
+.page h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.page h2 {
+  margin-bottom: 0.5em;
+}
+.page h4 {
+  margin-bottom: 1em;
+}
+/* JOBS STYLES */
+/* BLOG STYLES */
+.blog-recent {
+  text-align: right;
+}
+.blog-title-list {
+  list-style: none;
+  padding: 0;
+}
+.blog-title-list li ~ li {
+  margin-top: 1.5em;
+}
+.blog-title-list span {
+  color: #999;
+  display: block;
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+.blog-posts ~ .blog-posts {
+  border-top: 1px dotted rgba(0, 0, 0, 0.1);
+  margin-top: 4em;
+  padding-top: 4em;
+}
+.blog-posts .post-header {
+  font-size: 0.8rem;
+}
+.post-header {
+  margin-bottom: 1.5em;
+}
+.post-header img,
+.post-header .social-link {
+  margin-right: 0.5em;
+}
+.post-header img {
+  border-radius: 99px;
+  display: inline-block;
+  height: 2.5em;
+  vertical-align: middle;
+}
+.posts-image {
+  background-position: center;
+  background-size: cover;
+  height: 6em;
+  margin-bottom: 1.5em;
 }
