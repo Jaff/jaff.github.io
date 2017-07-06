@@ -10,8 +10,16 @@
     font-size: 7vw;
     margin-top: 0;
   }
-  a{
-    color: #f00;
+  a {
+    color: #6397b5;
+  }
+  p {
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h2 ~ p {
   }
   h4 {
     color: #999;
@@ -126,7 +134,8 @@
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   box-sizing: border-box;
   height: 100vh;
   padding-top: 10vh;
@@ -143,7 +152,8 @@
   width: 0;
 }
 .hero-home {
-  background-image: url(/images/shark.jpg);
+//  background-image: url(/images/shark.jpg);
+  background-image: url(/images/jaff.jpg);
   background-position: center top;
 }
 .hero-content {
@@ -206,7 +216,7 @@
   height: 0;
 }
 .bio-box {
-  border: 1px solid #000;
+//  border: 1px solid #000;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
