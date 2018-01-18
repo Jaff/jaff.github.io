@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="page content post">
+  <article>
+    <header class="post-header">
+      <h1>{{ page.company }}</h1>
+      <h2>{{ page.location }}</h2>
+      <h3>{{ page.title }}</h3>
+      <h3>{{ page.dates }}</h3>
+    </header>
+    <div class="post-content">
+      {{ page.duties }}
+    </div>
+    <aside class="content-container">
+      <h4>Recent Positions</h4>
+      <ul class="blog-title-list col-two">
+        {% for post in site.posts limit:5 %}
+          <li>
+            <a href="{{ post.url }}">{{ post.company }}</a>
+            <span>{{ post.dates }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
+    <footer class="post-footer">
+      {{ page.postFooter }}
+    </footer>
+  </article>
+</div>
