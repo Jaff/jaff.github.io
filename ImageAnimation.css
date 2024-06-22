@@ -1,0 +1,200 @@
+.wrapper {
+    max-height: 80vh;
+    display: flex;
+    flex-basis: content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: LemonChiffon;
+    padding: 20px;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+/*     max-height: 50vh; */
+    border-radius: 13px;
+    box-shadow: 20px 40px 33px rgba(0,0,0,0.3);
+    padding: 2rem;
+    width: 50vh;
+    background-color:  #6cc2ce;
+    flex-basis: content;
+}
+
+.card2 {
+/*     max-height: 50vh; */
+    border-radius: 13px;
+    box-shadow: 20px 40px 33px rgba(0,0,0,0.3);
+    padding: 2rem;
+    width: 50vh;
+/*    background-color:  DarkTurquoise; */
+    background-image: linear-gradient(30deg, Lavender,  DarkTurquoise);
+    flex-basis: content;
+}
+
+.card3 {
+/*     max-height: 50vh; */
+    border-radius: 13px;
+    box-shadow: 20px 40px 33px rgba(0,0,0,0.3);
+    padding: 2rem;
+    width: 70vh;
+/*    background-color:  DarkTurquoise; */
+    background-image: linear-gradient(30deg, Lavender,  DarkTurquoise);
+    flex-basis: content;
+}
+
+/* Style a div with gradient as Background image */
+.image {
+    width: 35vh;
+    max-height: 20vh;
+    flex-basis: content;
+    background-image: linear-gradient(70deg, Indigo, Lavender );
+/*    background-image: linear-gradient(70deg, Lavender, Banana ); */
+    background-size: cover;
+    background-position: center center;
+    box-shadow:  10px 15px 15px 6px #3891b4;
+    border-radius: 15px;
+    /* Animate image */
+/*     animation: animImage 2s infinite; */
+}
+
+
+/* Style a div with gradient as Background image */
+.card h1 {
+    width: 50vh;
+    max-height: 20vh;
+    flex-shrink: 3;
+/*     background-image: linear-gradient(70deg, RoyalBlue, DarkTurquoise ); */
+    background-image: linear-gradient(70deg, Indigo, Lavender );
+    background-size: cover;
+    background-position: center center;
+    box-shadow:  10px 15px 15px 6px #3891b4;
+    border-radius: 15px;
+    text-align: center;
+    flex-basis: content;
+    /* Animate image */
+/*     animation: animImage 2s infinite; */
+}
+
+.card h2 {
+  text-align: center;
+        /* Amimate Heading */
+/*     animation: animTitle 2s infinite; */
+} 
+
+.card h3 {
+  text-align: center;
+        /* Amimate Heading */
+/*     animation: animTitle 2s infinite; */
+} 
+.card p {
+        /* Animate Paragraph */
+/*     animation: animContent 2s infinite; */
+}
+
+.card2 h1 {
+    width: 50vh;
+    max-height: 20vh;
+    flex-shrink: 3;
+/*     background-image: linear-gradient(70deg, RoyalBlue, DarkTurquoise ); */
+    background-image: linear-gradient(70deg, Indigo, Lavender );
+    background-size: cover;
+    background-position: center center;
+    box-shadow:  10px 15px 15px 6px #3891b4;
+    border-radius: 15px;
+    text-align: center;
+    flex-basis: content;
+    /* Animate image */
+/*     animation: animImage 2s infinite; */
+}
+
+.card2 h2 {
+  text-align: center;
+        /* Amimate Heading */
+/*     animation: animTitle 2s infinite; */
+} 
+
+.card2 h3 {
+  text-align: center;
+        /* Amimate Heading */
+/*     animation: animTitle 2s infinite; */
+} 
+.card2 p {
+        /* Animate Paragraph */
+/*     animation: animContent 2s infinite; */
+}
+
+.card3 h1 {
+    width: 70vh;
+    max-height: 20vh;
+    flex-shrink: 3;
+/*     background-image: linear-gradient(70deg, RoyalBlue, DarkTurquoise ); */
+    background-image: linear-gradient(70deg, Indigo, Lavender );
+    background-size: cover;
+    background-position: center center;
+    box-shadow:  10px 15px 15px 6px #3891b4;
+    border-radius: 15px;
+    text-align: center;
+    flex-basis: content;
+    /* Animate image */
+/*     animation: animImage 2s infinite; */
+}
+
+
+@keyframes animTitle {
+    from {
+            /* Add starting values for animation */
+            transform: translateX(-50px);
+            opacity: 0;
+    } 
+    to  {
+            /* Add Ending values for animation */
+            transform: translateY(0);
+            opacity: 1;
+   } 
+ }
+
+ @keyframes animContent {
+    from {
+            /* Add starting values for animation */
+            transform: translateX(50px);
+            opacity: 0;
+    } 
+    to  {
+            /* Add Ending values for animation */
+            transform: translateY(0);
+            opacity: 1;
+   } 
+ }
+
+  @keyframes animImage {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }

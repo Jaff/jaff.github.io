@@ -1,0 +1,135 @@
+
+body {
+	color:#333;
+	background-color:white;
+	margin:20px;
+	padding:0px;
+	font:11px verdana, arial, helvetica, sans-serif;
+	}
+h1 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-size:28px;
+	font-weight:900;
+	color:#ccc;
+	}
+h2 {
+	font:bold 12px/14px verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 5px 0px;
+	padding:0px;
+	}
+h3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.775em;
+	margin-bottom:0px;
+	font-style:italic;
+	width:100%;
+	float:left;
+    }
+
+p {
+	font:11px/20px verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 16px 0px;
+	padding:0px;
+	}
+.centre>p {margin:0px;}
+.centre>p+p {text-indent:30px;}
+
+td {
+	color:#09c;
+	font-size:11px;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-weight:600;
+	text-decoration:none;
+	text-indent: 6em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+a {
+	color:#09c;
+	font-size:11px;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-weight:600;
+	text-decoration:none;
+	}
+a:link {color:#09c;}
+a:visited {color:#07a;}
+a:hover {background-color:#eee;}
+
+.floating-div {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  z-index: 2;
+}
+
+overlayContainer {
+  POSITION: absolute; VISIBILITY: visible; BACKGROUND-IMAGE: images/Jaff.JPG;
+  LAYER-BACKGROUND-COLOR: lightgreen; width: 840;  height: 891;
+  BORDER-LEFT: 1px solid black; BORDER-TOP: 1px solid black;
+  BORDER-BOTTOM: 3px solid black; BORDER-RIGHT: 3px solid black; PADDING: 3px; z-index: 10
+}
+
+.readable {
+	font-size:16px;
+}
+
+.right
+{
+    text-align: justify;
+    margin-top: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10%;
+    border-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-color: inherit;
+    border-left-color: inherit;
+    width: 30%;
+    float: left;
+}
+
+.normal {
+	color : green;
+	text-align : left;
+	width : 100%;
+	float : none;
+}
+
+.middle
+{
+    text-align: justify;
+    margin-top: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10%;
+    border-color: black;
+    width: 30%;
+    float: left;
+}
+
+.left
+{
+    text-align: justify;
+    margin-top: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10%;
+    border-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-color: inherit;
+    border-left-color: inherit;
+    width: 30%;
+    float: left;
+}
+
+.weather {
+	color : white;
+	text-align : left;
+	width : 100%;
+	float : none;
+}
+
